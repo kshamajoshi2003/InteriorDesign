@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg bg-warning navbar-dark fixed-top">
+        <a href="{% url 'user_home' %}" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Home</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="{% url 'user_home' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'send_service_request' %}" class="nav-item nav-link">Designs</a>
+
+            </div>
+            <a href="#" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Interior Design</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="{% url 'request_status_user' %}" class="nav-item nav-link">Request Status</a>
+                <a href="{% url 'give_feedback' %}" class="nav-item nav-link">Give Feedback</a>
+                 <a href="{% url 'index' %}" class="nav-item nav-link">Logout</a>
+
+            </div>
+        </div>
+    </nav>

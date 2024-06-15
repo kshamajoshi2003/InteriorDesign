@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg bg-warning navbar-dark fixed-top">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Interior Design</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="{% url 'worker_home' %}" class="nav-item nav-link active">Home</a>
+
+                <a href="{% url 'upload_design' %}" class="nav-item nav-link"> Upload Designs </a>
+                <a href="{% url 'view_upload_design' %}" class="nav-item nav-link"> View Design </a>
+                <a href="{% url 'view_booking_requests' %}" class="nav-item nav-link"> View Requests </a>
+
+            </div>
+            <a href="#" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Interior Design</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="{% url 'payment_report' %}" class="nav-item nav-link">Payment Report</a>
+                 <a href="{% url 'view_feedback_worker' %}" class="nav-item nav-link">View Feedback</a>
+                <a href="{% url 'index' %}" class="nav-item nav-link">Logout</a>
+
+            </div>
+        </div>
+    </nav>
